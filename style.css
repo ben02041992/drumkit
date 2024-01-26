@@ -1,0 +1,124 @@
+body {
+    font-family: cursive;
+    height: 100%;
+    width: auto;
+    padding: 50px;
+    text-align: center;
+	background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.8NGYosv-6hLEqmWO9h42fAHaFI%26pid%3DApi&f=1&ipt=24dddca25c2dad40fdecf2b87046fb55d0d4c78366e156549f9043ac110b1f9a&ipo=images) no-repeat center center fixed;
+    background-size: 140vb;
+	height: auto;
+	width: auto;
+}
+
+.drumContainer{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.instructions {
+	position: absolute;
+	max-width: 150px;
+	top: 50%;
+	right: 10%;
+	text-align: center;
+	overflow: hidden;
+}
+
+/* .key {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.key p {
+    display: flex;
+    justify-items: center;
+    padding: 20px;
+    background: yellow;
+    cursor: pointer;
+} */
+
+
+
+button {
+    display: inline-flex;
+    max-width: 100%;
+    padding: 15px 25px;
+    font-size: 30px;
+    text-align: center;
+	justify-content: space-evenly;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+
+
+button:hover {background-color: purple}
+
+button:active {
+    background-color: yellowgreen;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+
+@keyframes drumSound {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+
+.button{
+overflow: hidden;
+	margin: 10px;
+}
+
+/* #a::before {
+    content: 'A';
+    position: absolute;
+    text-align: center;
+} */
